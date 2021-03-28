@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/logo.png" rel="icon">
-    <link href="assets/img/logo.png" rel="apple-touch-icon">
+    <link href="assets/img/logo0.png" rel="icon">
+    <link href="assets/img/logo0.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -27,12 +27,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- =======================================================
-  * Template Name: Tempo - v4.0.1
-  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -41,16 +35,18 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo"><a href="index.html">Curly Developers</a></h1>
+            <h1 class="logo hidden"><a href="index.html">Curly Developers</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo0.png" alt="" class="img-fluid">
+            </a>
 
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="hidden" href="#portfolio">Portfolio</a></li>
+                    <li class="hidden"><a class="hidden" href="#portfolio">Portfolio</a></li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
                     <li class="hidden"><a href="blog.html">Blog</a></li>
 
@@ -144,20 +140,13 @@
                             Assist to add in Analytics
                         </li>
 
-
                         <li class="serviceItem">
                             Design changes needed
                         </li>
 
-
                         <li class="serviceItem">
                             Text changes needed
                         </li>
-
-                        <li class="serviceItem">
-
-                        </li>
-
                     </ul>
                 </div>
 
@@ -551,7 +540,7 @@
 
                     <div class="col-lg-8 mt-5 mt-lg-0">
 
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="https://script.google.com/macros/s/AKfycbyK2NO9yYUlkVEQ7qnjWe-2tf0DLhSKBkm4wb_3a0JjyABlF8IDN_SPh_dJb5HU9sx4/exec" method="post" role="form" class="php-email-form gform">
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -573,6 +562,10 @@
                             </div>
                             <div class="text-center"><button type="submit">Send Message</button></div>
                         </form>
+
+                        <div class="thanksMsg hidden">
+                            <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+                        </div>
 
                     </div>
 
@@ -596,7 +589,7 @@
                         <h3>Curly Developers</h3>
                         <p>
                             Hong Kong <br><br>
-                            <strong>Phone:</strong> +852 0000 0000<br>
+
                             <strong>Email:</strong> curlydevelopers852@gmail.com<br>
                         </p>
                     </div>
@@ -642,6 +635,8 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
