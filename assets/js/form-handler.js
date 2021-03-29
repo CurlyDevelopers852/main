@@ -64,11 +64,12 @@
         var url = form.action;
         var xhr = new XMLHttpRequest();
 
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded", "Access-Control-Allow-Origin: https://curlydevelopers852.github.io/");
 
         xhr.open('POST', url);
         // xhr.withCredentials = true;
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded", "Access-Control-Allow-Origin: https://curlydevelopers852.github.io/");
+
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 form.reset();
