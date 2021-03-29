@@ -141,7 +141,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(49, 49, 49);
     padding: 2px 0;
 }
 
@@ -2119,4 +2119,25 @@ section {
     background: #000;
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .memberCol {
+        flex: none;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 290px;
+        text-align: center;
+        padding: 0;
+    }
+    #team .row {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
 }
